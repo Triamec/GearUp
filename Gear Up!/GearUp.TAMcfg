@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: GearUp.TAMcfg 25193 2017-07-19 10:10:13Z chm $ -->
+<TamTopology xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Topology" Version="Tam.3">
+  <Stations>
+    <TamStation Name="Master" Type="TLC100" LocalNodeNumber="1" HardwareSerialNumber="2048" HardwareRevision="1" FpgaFirmwareId="527" PeripheryLayoutId="2">
+      <Children>
+        <TamDevice Name="Adapter Device" RegisterLayoutId="6" TamaVirtualMachineId="4" DspFirmwareId="261">
+          <Registers>
+            <Children>
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/ModuloPositionMinimum" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/ModuloPositionMaximum" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/VelocityMaximum" Type="Single" Value="70" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/AccelerationMaximum" Type="Single" Value="5000" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/DecelerationMaximum" Type="Single" Value="5000" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/EmergencyDeceleration" Type="Single" Value="5000" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/JerkMaximum" Type="Single" Value="500000" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/DynamicReductionFactor" Type="Single" Value="1" />
+            </Children>
+          </Registers>
+        </TamDevice>
+      </Children>
+    </TamStation>
+    <TamStation Name="Slave" Type="TS151" LocalNodeNumber="0" HardwareSerialNumber="1071" HardwareRevision="1" FpgaFirmwareId="550" PeripheryLayoutId="2">
+      <Children>
+        <TamDevice RegisterLayoutId="4" TamaVirtualMachineId="4" DspFirmwareId="261">
+          <Registers>
+            <Children>
+              <RegisterComponent Address="General/Parameters/PowerBridgeVoltageUpperLimit" Type="Single" Value="29" />
+              <RegisterComponent Address="General/Parameters/PowerBridgeVoltageLowerLimit" Type="Single" Value="20" />
+              <RegisterComponent Address="General/Parameters/CommonVoltage" Type="Single" Value="0" />
+              <RegisterComponent Address="General/Parameters/ModulationMethod" Type="VectorModulationType" Value="SinusoidalPwm" />
+              <RegisterComponent Address="General/Parameters/EconomicModulation" Type="Boolean" Value="True" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/CommutationPhasingMethod" Type="CommutationPhasingMethod" Value="NoPhasing" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/EnablingMethod" Type="EnablingMethod" Value="ForcePhasing" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/MotorBrakeReleaseAction" Type="MotorBrakeReleaseAction" Value="NoAction" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/MotorNumberOfPolePairs" Type="Int32" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/MotorInvertDirection" Type="Boolean" Value="True" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/EncoderType" Type="EncoderType" Value="Digital1" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/EncoderPitch" Type="Single" Value="0.01256637" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/EncoderCountsPerRevolution" Type="Int32" Value="500" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/EncoderInvertDirection" Type="Boolean" Value="True" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/MotorPeakCurrent" Type="Single" Value="1.1" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/MotorNominalCurrent" Type="Single" Value="0.4" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/MotorI2tTimeConstant" Type="Single" Value="10" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/ReferencePosition" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/Environment/DoIndexLatchHoming" Type="Boolean" Value="False" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/ModuloPositionMinimum" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/ModuloPositionMaximum" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/VelocityMaximum" Type="Single" Value="500" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/AccelerationMaximum" Type="Single" Value="3000" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/DecelerationMaximum" Type="Single" Value="3000" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/EmergencyDeceleration" Type="Single" Value="5000" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/JerkMaximum" Type="Single" Value="200000" />
+              <RegisterComponent Address="Axes[0]/Parameters/PathPlanner/DynamicReductionFactor" Type="Single" Value="1" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Kr" Type="Single" Value="17" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Tn" Type="Single" Value="0.01" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Tv" Type="Single" Value="0.002" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/T1" Type="Single" Value="5E-05" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/PositionErrorLimit" Type="Single" Value="0.05" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/IntegratorOutputLimit" Type="Single" Value="0.25" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Tdelay" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Ffx" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Ffv" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Ffa" Type="Single" Value="9E-05" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/FfxOffset" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Filters[0]/FilterType" Type="FilterType" Value="Lowpass2" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Filters[0]/EdgeFrequency1" Type="Single" Value="260" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Filters[0]/DampingFactor1" Type="Single" Value="0.45" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Filters[0]/EdgeFrequency2" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Filters[0]/DampingFactor2" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Filters[1]/FilterType" Type="FilterType" Value="Bypassed" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Filters[2]/FilterType" Type="FilterType" Value="Bypassed" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Filters[3]/FilterType" Type="FilterType" Value="Bypassed" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/Filters[4]/FilterType" Type="FilterType" Value="Bypassed" />
+              <RegisterComponent Address="Axes[0]/Parameters/PositionController/OutputLimit" Type="Single" Value="1.1" />
+              <RegisterComponent Address="Axes[0]/Parameters/AngleSearch/StartTime" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/AngleSearch/RampRiseTime" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/AngleSearch/RampConstTime" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/AngleSearch/CurrentAmplitude" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/AngleSearch/SineAmplitude" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/AngleSearch/SineFrequency" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/CurrentController/KrD" Type="Single" Value="20" />
+              <RegisterComponent Address="Axes[0]/Parameters/CurrentController/TnD" Type="Single" Value="6E-05" />
+              <RegisterComponent Address="Axes[0]/Parameters/CurrentController/CurrentErrorLimitD" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/CurrentController/IntegratorOutputLimitD" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/CurrentController/OutputLimitD" Type="Single" Value="0" />
+              <RegisterComponent Address="Axes[0]/Parameters/CurrentController/KrQ" Type="Single" Value="20" />
+              <RegisterComponent Address="Axes[0]/Parameters/CurrentController/TnQ" Type="Single" Value="6E-05" />
+              <RegisterComponent Address="Axes[0]/Parameters/CurrentController/CurrentErrorLimitQ" Type="Single" Value="0.6" />
+              <RegisterComponent Address="Axes[0]/Parameters/CurrentController/IntegratorOutputLimitQ" Type="Single" Value="24" />
+              <RegisterComponent Address="Axes[0]/Parameters/CurrentController/OutputLimitQ" Type="Single" Value="24" />
+            </Children>
+          </Registers>
+        </TamDevice>
+      </Children>
+      <MotorBaseConfiguration>OneBrushDCMotor</MotorBaseConfiguration>
+    </TamStation>
+  </Stations>
+</TamTopology>
