@@ -19,9 +19,6 @@ before executing any sample application.*
 
 ## Hardware Prerequisites
 
-- *Triamec* drive with a motor and encoder connected and configured with a stable position controller
-- The sample assumes a configured axis which can be moved freely between -1 and 1 *[PositionController.PositionUnit]*
-- Connection to the drive by *Tria-Link* (via PCI adapter), *USB* or *Ethernet*
 
 - A *Tria-Link* PCI adapter (TL100 or TLC201) connected to your PC
 - At least two *Triamec* drives with a motor and encoder connected and configured with a stable position controller
@@ -30,23 +27,22 @@ before executing any sample application.*
 
 ## Hardware configuration adjustment
 
-The file GearUpTamConfiguration.xml must be replaced by one
+The file GearUp.TAMcfg must be replaced by one
 appropriate for your particular hardware environment.
 
 It is recommended to use the TAM system explorer (part of the TAM Software)
 as a convenient way to create your configuration file.
 With the TAM system explorer, you can
-- Boot and identify your system;
-- Manipulate the register values of your drives;
-- Save the TAM configuration as an XML file.
+- Boot and identify your system
+- Manipulate the register values of your drives
+- Save the TAM configuration as GearUp.TAMcfg and replace the existing default GearUp.TAMcfg
 
 It is clear that the adjustment of register values is a major task 
 and requires understanding of motion control.
 Please contact Triamec if you need further assistance with this setup procedure.
 For this "Gear Up!" program, a working TAM configuration file is a prerequisite.
 
-As an alternative to replacing the content of the existing GearUpTamConfiguration.xml, 
-you can 
+As an alternative to replacing the existing GearUp.TAMcfg or its content, you can 
 - add your own TAM configuration file to the GearUp project,
 - make sure its "Copy to Output Directory" property is set to "Copy if newer", and
 - change the application setting "TamConfigurationPath" to the name of your file.
@@ -59,7 +55,7 @@ In addition you need [TAM Software](https://www.triamec.com/en/tam-software-supp
 
 ## Run the *Gear Up!* Application
 
-1. Replace the GearUpTamConfiguration.xml as described above
+1. Replace the GearUp.TAMcfg as described above
 2. Open the `Acquisition.sln`.
 3. Open the `AcquisitionForm.cs` (view code)
 4. Set the name of the axis for `AxisName`. Double check it in the register *Axes[].Information.AxisName* using the *TAM System Explorer*.
