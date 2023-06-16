@@ -56,10 +56,11 @@ In addition you need [TAM Software](https://www.triamec.com/en/tam-software-supp
 ## Run the *Gear Up!* Application
 
 1. Replace the GearUp.TAMcfg as described above
-2. Open the `Acquisition.sln`.
-3. Open the `AcquisitionForm.cs` (view code)
-4. Set the name of the axis for `AxisName`. Double check it in the register *Axes[].Information.AxisName* using the *TAM System Explorer*.
-5. Set the name of the network interface card for `NicName`. You can find this name using the *TAM System Explorer*. In the example below, `NicName = "Ethernet 2"`.
+2. In Settings.settings, change the Serial Number for the Slave and Master according to your Hardware. You can retrieve the Serial Numbers by clicking on the Station (red Icon) in the TAM System Explorer tree.
+3. Open the `Acquisition.sln`.
+4. Open the `AcquisitionForm.cs` (view code)
+5. Set the name of the axis for `AxisName`. Double check it in the register *Axes[].Information.AxisName* using the *TAM System Explorer*.
+6. Set the name of the network interface card for `NicName`. You can find this name using the *TAM System Explorer*. In the example below, `NicName = "Ethernet 2"`.
 
 ![TAM Acquisition](./doc/Network_NicName.png)
 
