@@ -15,7 +15,7 @@ without adjusting configuration values to your hardware environment.
 Please read and follow the recommendations below
 before executing any sample application.*
 
-![TAM Acquisition](./doc/Acquisition_Movement.png)
+![TAM Acquisition](./doc/Screenshot_GearUp.png)
 
 ## Hardware Prerequisites
 
@@ -32,15 +32,15 @@ appropriate for your particular hardware environment.
 
 It is recommended to use the TAM system explorer (part of the TAM Software)
 as a convenient way to create your configuration file.
-With the TAM system explorer, you can
+With the TAM system explorer, you can:
 - Boot and identify your system
 - Manipulate the register values of your drives
 - Save the TAM configuration as GearUp.TAMcfg and replace the existing default GearUp.TAMcfg
 
-It is clear that the adjustment of register values is a major task 
+*The adjustment of register values is a major task 
 and requires understanding of motion control.
 Please contact Triamec if you need further assistance with this setup procedure.
-For this "Gear Up!" program, a working TAM configuration file is a prerequisite.
+For this "Gear Up!" program, a working TAM configuration file is a prerequisite.*
 
 As an alternative to replacing the existing GearUp.TAMcfg or its content, you can 
 - add your own TAM configuration file to the GearUp project,
@@ -53,22 +53,17 @@ This project is made and built with [Microsoft Visual Studio](https://visualstud
 
 In addition you need [TAM Software](https://www.triamec.com/en/tam-software-support.html) installation.
 
-## Run the *Gear Up!* Application
+## Prepare and Run the *Gear Up!* Application
 
 1. Replace the GearUp.TAMcfg as described above
-2. In Settings.settings, change the Serial Number for the Slave and Master according to your Hardware. You can retrieve the Serial Numbers by clicking on the Station (red Icon) in the TAM System Explorer tree.
-3. Open the `Acquisition.sln`.
-4. Open the `AcquisitionForm.cs` (view code)
-5. Set the name of the axis for `AxisName`. Double check it in the register *Axes[].Information.AxisName* using the *TAM System Explorer*.
-6. Set the name of the network interface card for `NicName`. You can find this name using the *TAM System Explorer*. In the example below, `NicName = "Ethernet 2"`.
-
-![TAM Acquisition](./doc/Network_NicName.png)
-
-5. Set `_moveAxis` to `true` if you want to use the trigger for the acquisition
-6. Select the correct connection to the drive by using comment/uncomment for setting the `access` variable 
+2. In Settings.settings, change the Serial Number for the Slave and Master according to your Hardware. You can retrieve the Serial Numbers by clicking on the Station (red Icon) in the TAM System Explorer tree
+3. Run the applicaton
 
 ## Operate the *Gear Up!* Application
 
-- Use the slider **Trigger** to adjust the velocity needed to start the acquisition. If `_moveAxis` is set to `false`, **Trigger** is ignored (continous acquisition)
-- Use the slider **Recording time** to adjust the length of the acquisition
+- **Enable** the axes
+- **Couple** the axes with the electronic gearing
+- Move the axes **Left** or **Right**
+- Change the Velocity via the **Slider**
+- Open the built-in System Explorer on **View > TAM System Explorer** for troubleshooting and surveillance from within the application
 
