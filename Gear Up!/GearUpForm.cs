@@ -7,8 +7,8 @@ using Triamec.Tam.Subscriptions;
 using Triamec.Tam.UI;
 using Triamec.Tama;
 using Triamec.TriaLink;
-using RegisterMaster = Triamec.Tam.Rlid6.Register;
-using RegisterSlave = Triamec.Tam.Rlid4.Register;
+using RegisterMaster = Triamec.Tam.Rlid19.Register;
+using RegisterSlave = Triamec.Tam.Rlid19.Register;
 
 namespace Triamec.Tam.Samples {
 	/// <summary>
@@ -181,7 +181,7 @@ namespace Triamec.Tam.Samples {
 			_slaveAxis.SetPosition(0);
 
 			// reset gear to ½
-			_slaveRegisterRoot.Tama.Variables.GenPurposeVar0.Write(0.5f);
+			_slaveRegisterRoot.Application.Variables.Floats[0].Write(0.5f);
 
 			// enable electronic gearing function
 			_slaveDrive.TamaManager.IsochronousVM.EnableAndVerify();
@@ -195,7 +195,7 @@ namespace Triamec.Tam.Samples {
 
 			// store the master motion signals to the path planner input of the slave axis
 			var subscriber = new Subscriber(
-				_slaveRegisterRoot.Axes[0].Signals.PathPlanner.PathValuesTimestamp,
+				_slaveRegisterRoot.Axes[0].Commands.PathPlanner.StreamTimestamp,
 				_slaveRegisterRoot.Axes[0].Commands.PathPlanner.Xnew,
 				_slaveRegisterRoot.Axes[0].Commands.PathPlanner.Vnew,
 				_slaveRegisterRoot.Axes[0].Commands.PathPlanner.Anew);
@@ -254,24 +254,17 @@ namespace Triamec.Tam.Samples {
 			}
 		}
 
-		/// <summary>
-		/// Switches the bridge power off
-		/// and exits the application.
-		/// </summary>
-		void Shutdown(object sender, EventArgs e) {
-			try {
-				DisableDrives();
+        /// <summary>
+        /// Switches the bridge power off
+        /// and exits the application.
+        /// </summary>
+        void Shutdown(object sender, EventArgs e) => Close();
 
-			} finally {
-				Application.Exit();
-			}
-		}
+        #endregion Form handler methods
 
-		#endregion Form handler methods
+        #region Button handler methods
 
-		#region Button handler methods
-
-		void OnEnableButtonClick(object sender, EventArgs e) {
+        void OnEnableButtonClick(object sender, EventArgs e) {
 			try {
 				EnableDrives();
 
@@ -380,7 +373,30 @@ namespace Triamec.Tam.Samples {
 			// Toggle the display of the TAM system explorer window.
 			_tamExplorerForm.Visible = menuItem.Checked;
 		}
-		#endregion Menu handler methods
-		#endregion GUI handler methods
-	}
+        #endregion Menu handler methods
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            const string message =
+			"Do you want to disable the drives and close the program?";
+            const string caption = "Exit application";
+            var result = MessageBox.Show(message, caption,
+                                         MessageBoxButtons.YesNo,
+                                         MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
+                // cancel the closure of the form.
+                e.Cancel = true;
+            }
+            else
+            {
+                DisableDrives();
+                base.OnFormClosing(e);
+            }
+
+        }
+
+
+        #endregion GUI handler methods
+    }
 }

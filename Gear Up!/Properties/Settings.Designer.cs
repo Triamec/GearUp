@@ -12,7 +12,7 @@ namespace Triamec.Tam.Samples.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.6.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -37,7 +37,7 @@ namespace Triamec.Tam.Samples.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("29")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1559")]
         public global::Triamec.TriaLink.UniqueDeviceId SerialNumberMaster {
             get {
                 return ((global::Triamec.TriaLink.UniqueDeviceId)(this["SerialNumberMaster"]));
@@ -49,7 +49,7 @@ namespace Triamec.Tam.Samples.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("852")]
         public global::Triamec.TriaLink.UniqueDeviceId SerialNumberSlave {
             get {
                 return ((global::Triamec.TriaLink.UniqueDeviceId)(this["SerialNumberSlave"]));

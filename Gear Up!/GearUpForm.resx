@@ -131,13 +131,13 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="exitMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 22</value>
+    <value>448, 54</value>
   </data>
   <data name="exitMenuItem.Text" xml:space="preserve">
     <value>&amp;Exit</value>
   </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
+    <value>87, 45</value>
   </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;File</value>
@@ -149,13 +149,13 @@
     <value>False</value>
   </metadata>
   <data name="explorerMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 22</value>
+    <value>463, 54</value>
   </data>
   <data name="explorerMenuItem.Text" xml:space="preserve">
     <value>&amp;TAM System Explorer</value>
   </data>
   <data name="viewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>106, 45</value>
   </data>
   <data name="viewToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;View</value>
@@ -163,8 +163,12 @@
   <data name="menuStrip.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>16, 5, 0, 5</value>
+  </data>
   <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>292, 24</value>
+    <value>779, 55</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip.TabIndex" type="System.Int32, mscorlib">
@@ -198,10 +202,13 @@
     <value>Verdana, 14.25pt, style=Bold, Italic</value>
   </data>
   <data name="_moveNegativeButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
+    <value>16, 45</value>
+  </data>
+  <data name="_moveNegativeButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="_moveNegativeButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 50</value>
+    <value>328, 119</value>
   </data>
   <data name="_moveNegativeButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -230,15 +237,17 @@
   <data name="_enableButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 14.25pt, style=Bold, Italic</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="_enableButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="_enableButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
+    <value>16, 45</value>
+  </data>
+  <data name="_enableButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="_enableButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 50</value>
+    <value>328, 119</value>
   </data>
   <data name="_enableButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -268,10 +277,13 @@
     <value>Verdana, 14.25pt, style=Bold, Italic</value>
   </data>
   <data name="_disableButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 19</value>
+    <value>368, 45</value>
+  </data>
+  <data name="_disableButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="_disableButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 50</value>
+    <value>328, 119</value>
   </data>
   <data name="_disableButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -301,10 +313,13 @@
     <value>Verdana, 14.25pt, style=Bold, Italic</value>
   </data>
   <data name="_movePositiveButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 19</value>
+    <value>371, 45</value>
+  </data>
+  <data name="_movePositiveButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="_movePositiveButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 50</value>
+    <value>328, 119</value>
   </data>
   <data name="_movePositiveButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -334,10 +349,13 @@
     <value>NoControl</value>
   </data>
   <data name="_velocityTrackBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 88</value>
+    <value>16, 210</value>
+  </data>
+  <data name="_velocityTrackBar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="_velocityTrackBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>256, 45</value>
+    <value>683, 114</value>
   </data>
   <data name="_velocityTrackBar.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -367,10 +385,13 @@
     <value>NoControl</value>
   </data>
   <data name="_coupleButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
+    <value>16, 45</value>
+  </data>
+  <data name="_coupleButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="_coupleButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 50</value>
+    <value>328, 119</value>
   </data>
   <data name="_coupleButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -403,10 +424,13 @@
     <value>NoControl</value>
   </data>
   <data name="_decoupleButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 19</value>
+    <value>368, 45</value>
+  </data>
+  <data name="_decoupleButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="_decoupleButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 50</value>
+    <value>328, 119</value>
   </data>
   <data name="_decoupleButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -433,10 +457,16 @@
     <value>False</value>
   </metadata>
   <data name="driveGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 28</value>
+    <value>32, 67</value>
+  </data>
+  <data name="driveGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
+  </data>
+  <data name="driveGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="driveGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 81</value>
+    <value>715, 193</value>
   </data>
   <data name="driveGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -469,10 +499,13 @@
     <value>True</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 119</value>
+    <value>600, 284</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 0, 8, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 13</value>
+    <value>87, 32</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -499,10 +532,13 @@
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 119</value>
+    <value>27, 284</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 0, 8, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
+    <value>71, 32</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -529,10 +565,13 @@
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 76</value>
+    <value>19, 181</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 0, 8, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
+    <value>115, 32</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -553,10 +592,16 @@
     <value>2</value>
   </data>
   <data name="motionGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 202</value>
+    <value>32, 482</value>
+  </data>
+  <data name="motionGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
+  </data>
+  <data name="motionGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="motionGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 139</value>
+    <value>715, 331</value>
   </data>
   <data name="motionGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -580,10 +625,16 @@
     <value>False</value>
   </metadata>
   <data name="couplingGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 115</value>
+    <value>32, 274</value>
+  </data>
+  <data name="couplingGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
+  </data>
+  <data name="couplingGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="couplingGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 81</value>
+    <value>715, 193</value>
   </data>
   <data name="couplingGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -607,10 +658,10 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>16, 31</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>292, 351</value>
+    <value>779, 837</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1158,6 +1209,9 @@
         AAD/8AAAD/8AAP//wAAf/wAA//+AAB//AAD//wAAH/8AAP//AAA//wAA//4AAD//AAD//8AAf/8AAP//
         /gB//wAA///+AP//AAD///wA//8AAP//+AH//wAA///4A///AAD///+H//8AAA==
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>TAM Gear Up!</value>

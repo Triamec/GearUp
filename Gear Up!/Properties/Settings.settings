@@ -6,10 +6,10 @@
       <Value Profile="(Default)">GearUp.TAMcfg</Value>
     </Setting>
     <Setting Name="SerialNumberMaster" Type="Triamec.TriaLink.UniqueDeviceId" Scope="User">
-      <Value Profile="(Default)">29</Value>
+      <Value Profile="(Default)">1559</Value>
     </Setting>
     <Setting Name="SerialNumberSlave" Type="Triamec.TriaLink.UniqueDeviceId" Scope="User">
-      <Value Profile="(Default)">30</Value>
+      <Value Profile="(Default)">852</Value>
     </Setting>
   </Settings>
 </SettingsFile>

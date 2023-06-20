@@ -1,6 +1,6 @@
 ﻿// Copyright © 2008 Triamec Motion AG
 
-using Triamec.Tama.Rlid4;
+using Triamec.Tama.Rlid19;
 using Triamec.Tama.Vmid5;
 
 namespace Triamec.Tam.Samples {
@@ -26,15 +26,14 @@ namespace Triamec.Tam.Samples {
 		///
 		/// Changing the gear is possible when the master's position is <c>0</c>.
 		/// </summary>
-		[TamaTask(Task.Axis1Coupling)]
+		[TamaTask(Task.IsochronousMain)]
 		static void CouplingFunction() {
 			#region Change gear
 
-			if (_gear != Register.Tama.Variables.GenPurposeVar0) {
-
-				// are the master and slave in a synchronized position where changing gear is possible?
-				// change gear by reading from a Tama application register
-				_gear = Register.Tama.Variables.GenPurposeVar0;
+			if (_gear != Register.Application.Variables.Floats[0]) {
+                    // are the master and slave in a synchronized position where changing gear is possible?
+                    // change gear by reading from a Tama application register
+                    _gear = Register.Application.Variables.Floats[0];
 				_gearSquare = _gear * _gear;
 			}
 
@@ -44,13 +43,13 @@ namespace Triamec.Tam.Samples {
 
 			// read in the master motion transmitted by subscription
 			// write the slave motion to the path planner's coupling registers
-			Register.Axes_0.Commands.PathPlanner.XnewCoupled.Float32 = 
-				_gear * Register.Axes_0.Commands.PathPlanner.Xnew.Float32;
+			Register.Axes_0.Commands.PathPlanner.StreamX = 
+				_gear * Register.Axes_0.Commands.PathPlanner.Xnew;
 			
-			Register.Axes_0.Commands.PathPlanner.VnewCoupled =
+			Register.Axes_0.Commands.PathPlanner.StreamV =
 				_gear * Register.Axes_0.Commands.PathPlanner.Vnew;
 			
-			Register.Axes_0.Commands.PathPlanner.AnewCoupled =
+			Register.Axes_0.Commands.PathPlanner.StreamA =
 				_gearSquare * Register.Axes_0.Commands.PathPlanner.Anew;
 
 			#endregion Slave motion
