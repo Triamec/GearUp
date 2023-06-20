@@ -15,7 +15,7 @@ without adjusting configuration values to your hardware environment.
 Please read and follow the recommendations below
 before executing any sample application.*
 
-<img src="./doc/Screenshot_GearUp.png" height="50%">
+<img src="./doc/Screenshot_GearUp.png" height="50%" width="50%">
 
 ## Hardware Prerequisites
 
