@@ -9,3 +9,10 @@ csharp_new_line_before_open_brace = none
 csharp_new_line_before_else = false
 csharp_new_line_before_catch = false
 csharp_new_line_before_finally = false
+
+dotnet_diagnostic.CA1303.severity = silent
+dotnet_diagnostic.CA2000.severity = silent
+dotnet_diagnostic.CA2213.severity = silent
+
+# IDE0051: Remove unused private members
+dotnet_diagnostic.IDE0051.severity = silent
