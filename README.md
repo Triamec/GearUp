@@ -1,6 +1,7 @@
 # Gear Up!
 
-[![TAM - API](https://img.shields.io/static/v1?label=TAM&message=API&color=b51839)](https://www.triamec.com/en/tam-api.html)
+[![TAM - API](https://img.shields.io/static/v1?label=TAM&message=API&color=b51839)](https://www.triamec.com/en/tam-api.html) [![TAM - Tama](https://img.shields.io/static/v1?label=TAM&message=Tama&color=b51839)](https://www.triamec.com/tam-tama.html)
+
 
 This "Gear Up!" program is a .NET windows application
 demonstrating the motion of two motors coupled with an electronic gearing,
