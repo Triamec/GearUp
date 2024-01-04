@@ -72,6 +72,6 @@ In addition you need [TAM Software](https://www.triamec.com/en/tam-software-supp
 
 This application was developed for use with a Tria-Link PCI adapter. It can be configured and started to connect via USB or Ethernet, but due to a limitation in the TAM API, subscriptions won't work when connected via USB
 or Ethernet.
-If you want to operate over USB and Ethernet, comment out the subscription part, and set up _drive to drive data exchange_ via configuration as outlined in [application note 142](https://www.triamec.com/en/documents.html).
+If you want to operate over USB and Ethernet, comment out the subscription part, and set up _drive to drive data exchange_ via configuration as outlined in [application note 142](https://www.triamec.com/en/documents.html). This is also the recommended practice when this application represents the primary use case of your system.
 
 The buttons don't change their state based on the state on the drive. Errors may occur when pressing a button in an inapropriate state, for instance, trying to move while the axis is not enabled.
