@@ -22,7 +22,7 @@ before executing any sample application.*
 
 
 - A *Tria-Link* PCI adapter (TL100 or TLC201)
-- At least two *Triamec* drives with a motor and encoder connected and configured with a stable position controller
+- At least two *Triamec* Tria-Link drives with a motor and encoder connected and configured with a stable position controller
 - A *Tria-Link* connection including the PCI adapter and the drives
 
 
@@ -68,3 +68,8 @@ In addition you need [TAM Software](https://www.triamec.com/en/tam-software-supp
 - Change the Velocity via the **Slider**
 - Open the built-in System Explorer on **View > TAM System Explorer** for troubleshooting and surveillance from within the application
 
+## Known issues
+
+This application was developed for use with a Tria-Link PCI adapter. It can be configured and started to connect via USB or Ethernet, but due to a limitation in the TAM API, subscriptions won't work when connected via USB
+or Ethernet.
+If you want to operate over USB and Ethernet, comment out the subscription part, and set up _drive to drive data exchange_ via configuration as outlined in [application note 142](https://www.triamec.com/en/documents.html).
